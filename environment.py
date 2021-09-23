@@ -46,7 +46,6 @@ class environment():
         self.state[3] += 4
 
     def step(self, action):
-        print('step action', action)
         # 0 means draw , 1 means stand
         initState = self.state
         c = 0
@@ -65,8 +64,6 @@ class environment():
         elif action == 1:
             playerDone = True
 
-        print('card drawn: ', c)
-
         if self.player.score <= 21:
             # Update state only if it's less than 21
             self.state[1] = self.player.score
@@ -81,7 +78,6 @@ class environment():
         while self.casino.score <= 16:
             self.casino.draw(self.deck.deal())
 
-        print('Casino score: ', self.casino.score)
         if self.isPlayerWin():
             return 1
         return -1

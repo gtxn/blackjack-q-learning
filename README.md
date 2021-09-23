@@ -1,8 +1,6 @@
 # blackjack-q-learning
-Q learning (Reinforcement learning) with blackjack. Model is still in testing 🚧
+This is an exploration of Q learning (Reinforcement learning) with the example of blackjack. Currently the model is very simple and only allows players to 'hit' once. However, the good news is that the percentage win is approximately 38-40%, which beats randomly hitting (30-33%) and hitting only if the score is below 16 (30-33%)
 
-I used the player's hand, one of the dealer's cards, the current card count (ooh sneaky), and the number cards that have been dealt so far as the parameters. In order to use the qTable though, I had to squishify this 4d into just 1 array with 4 for loops ... and ended up with an insanely big q table... It's just a first attempt so that shall do for now :) and on hindsight maybe q table was not the best approach, but I'll see what I can do.
+I used the player's hand, one of the dealer's cards, the true card count (ooh sneaky) to construct a q table and iterated about 500000 times.
 
-Currently in the process of squishifying the q table further by introducing true count (rounded to 3sf?) to remove the need for 2 other features. 
-
-In the (hopefully) not so distant future I'll get this to work. Then, I'll see you in Vegas🎰
+In the (hopefully) not so distant future I'll get this to work better at least nearer to 50%. Then, I'll see you in Vegas🎰

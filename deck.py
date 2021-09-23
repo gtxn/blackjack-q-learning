@@ -27,3 +27,6 @@ class deck():
         if len(self.deckArr) < self.stopPoint:
             return True
         return False
+
+    def getDecksLeft(self):
+        return round(len(self.deckArr)/52, 0)
