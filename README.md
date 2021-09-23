@@ -3,4 +3,4 @@ This is an exploration of Q learning (Reinforcement learning) with the example o
 
 I used the player's hand, one of the dealer's cards, the true card count (ooh sneaky) to construct a q table and iterated about 500000 times.
 
-In the (hopefully) not so distant future I'll get this to work better at least nearer to 50%. Then, I'll see you in Vegas🎰
+In the (hopefully) not so distant future I'll get this to work better! Then I'll see you in Vegas ;D 🎰
